@@ -1,0 +1,547 @@
+/* --------------------------------- global code start --------------------------------- */
+
+:root {
+  --main-color: #16a085;
+  --bg-color: #000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+span,
+a,
+img {
+  display: inline-block;
+}
+
+.container {
+  padding-top: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  margin: 20px 0;
+}
+
+/* --------------------------------- global code end --------------------------------- */
+
+/* --------------------------------- navbar start --------------------------------- */
+
+.navbar {
+  background-color: white;
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  top: 0%;
+  z-index: 9;
+}
+
+.navbar::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.navbar .logo {
+  float: left;
+  padding-left: 200px;
+  margin-top: 25px;
+}
+
+.navbar img {
+  padding-right: 200px;
+}
+
+.navbar ul {
+  float: right;
+  margin-right: 200px;
+  margin-top: 25px;
+}
+
+.navbar li {
+  float: right;
+  margin-right: 30px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+  font-size: 11px;
+}
+
+/* --------------------------------- navbar end --------------------------------- */
+
+/* --------------------------------- home start --------------------------------- */
+
+#home {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.03);
+  clear: both;
+}
+
+#home table {
+  padding: 3.5% 10% 0% 10%;
+}
+
+#home td {
+  width: 50%;
+}
+
+.home-data {
+  float: left;
+  width: 100%;
+}
+
+.me {
+  font-weight: bold;
+}
+
+.home-data h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.home-photo {
+  width: 100%;
+  float: right;
+  padding-left: 5%;
+}
+
+.home-photo img {
+  width: 90%;
+}
+
+.home-btn {
+  background-image: linear-gradient(
+    to right,
+    rgba(174, 0, 255, 0.342),
+    rgb(0, 153, 255),
+    rgb(0, 153, 255)
+  );
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  font-weight: 700;
+}
+
+/* --------------------------------- home end --------------------------------- */
+
+/* --------------------------------- about start --------------------------------- */
+
+#about {
+  padding: 5% 10%;
+  background-color: rgba(0, 0, 0, 0.01);
+  clear: both;
+}
+
+.about-data {
+  float: right;
+  width: 100%;
+}
+
+.about-me {
+  font-weight: bold;
+}
+
+.about-data h1 {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.about-photo {
+  width: 90%;
+  float: left;
+  padding-right: 50px;
+}
+
+.about-photo img {
+  width: fit-content;
+}
+
+.about-btn {
+  background-image: linear-gradient(
+    to right,
+    rgba(174, 0, 255, 0.342),
+    rgb(0, 153, 255),
+    rgb(0, 153, 255)
+  );
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  font-weight: 700;
+}
+
+/* --------------------------------- about end --------------------------------- */
+
+/* --------------------------------- services start --------------------------------- */
+
+#services {
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: rgba(0, 0, 0, 0.01);
+  padding-bottom: 5%;
+}
+
+#services h3 {
+  text-align: center;
+}
+
+.all-services::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#services .sercive h3 {
+  font-weight: 700;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#services p {
+  color: lightslategray;
+  text-align: center;
+}
+
+.icon {
+  width: 100%;
+  font-size: 30px;
+}
+
+.service {
+  float: left;
+  width: 30%;
+  padding: 20px 20px;
+  margin: 25px 20px;
+  height: 200px;
+  text-align: center;
+}
+
+/* --------------------------------- services end --------------------------------- */
+
+/* --------------------------------- work start --------------------------------- */
+
+#work {
+  background-image: linear-gradient(
+    to right,
+    rgba(174, 0, 255, 0.342),
+    rgb(0, 153, 255),
+    rgb(0, 153, 255)
+  );
+}
+
+.work {
+  margin: 5% 10%;
+}
+
+.work table {
+  width: 100%;
+}
+
+.work td {
+  width: 25%;
+  text-align: center;
+  color: #fff;
+}
+
+.work-under-scope {
+  width: 100%;
+}
+
+/* --------------------------------- work end --------------------------------- */
+
+/* --------------------------------- portfolio start --------------------------------- */
+
+#portfolio {
+  padding: 10% 15% 5% 15%;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+#portfolio h1,
+#portfolio p,
+#portfolio table {
+  text-align: center;
+}
+
+#portfolio td {
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+#portfolio table {
+  margin: auto;
+  width: 30%;
+  margin-bottom: 7%;
+  margin-top: 7%;
+}
+
+.our-work table {
+  width: 100%;
+}
+
+.our-work h3 {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  text-align: center;
+}
+
+/* --------------------------------- portfolio end --------------------------------- */
+
+/* --------------------------------- feedback start --------------------------------- */
+
+#feedback {
+  padding: 10%;
+  text-align: center;
+  background-color: rgb(242, 248, 255);
+}
+
+#feedback h2 {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+#feedback p {
+  color: gray;
+}
+
+#feedback table {
+  width: 100%;
+}
+
+.client {
+  background-color: #fff;
+  padding: 2%;
+  text-align: left;
+  width: 40%;
+  cursor: pointer;
+}
+
+.client p,
+.client h3 {
+  text-align: left;
+  padding-left: 2%;
+}
+
+.client img {
+  width: 100%;
+}
+
+/* --------------------------------- feedback end --------------------------------- */
+
+/* --------------------------------- pricing start --------------------------------- */
+#pricing {
+  padding: 5% 12.5% 2%;
+  text-align: center;
+}
+
+#pricing p {
+  margin-bottom: 8%;
+}
+
+.prices {
+  padding: 3% 0%;
+}
+
+.prices::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.category {
+  border: 20px solid #cdd2ff;
+  border-radius: 50%;
+  margin: 0% 30%;
+}
+
+.category h2 {
+  border-radius: 50%;
+  background-color: rgb(240, 225, 255);
+  margin-bottom: 0%;
+}
+
+.price {
+  float: left;
+  width: 25%;
+  background-color: rgb(255, 251, 255);
+  padding: 2% 2%;
+  cursor: pointer;
+}
+
+.price hr {
+  width: 90%;
+  color: #777777;
+  margin: 3% 0%;
+}
+
+.price h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  padding-top: 5%;
+}
+
+.price h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 5%;
+}
+
+.price h4 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  color: #777777;
+  padding-top: 5%;
+}
+
+.price h5 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 35px;
+  padding: 5% 0%;
+}
+
+/* --------------------------------- pricing end --------------------------------- */
+
+/* --------------------------------- pages start --------------------------------- */
+
+#pages {
+  padding: 0% 12.5%;
+  background-color: #8490ff;
+}
+
+#pages .brands {
+  width: 100%;
+}
+
+#pages .brands table {
+  width: auto;
+  padding: 7.5% 0%;
+}
+
+.brands td {
+  margin: auto;
+  width: 25%;
+  opacity: 0.6;
+}
+
+/* --------------------------------- pages end --------------------------------- */
+
+/* --------------------------------- contact start --------------------------------- */
+
+#contact {
+  padding: 7.5% 12.5%;
+  background-color: black;
+}
+
+.contact::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.contact .about_me {
+  float: left;
+  width: 40%;
+  padding-right: 5%;
+  color: #fff;
+}
+
+.contact h3 {
+  font-size: 20px;
+}
+
+.contact p {
+  opacity: 0.6;
+  font-size: 15px;
+}
+
+.contact .newsletter {
+  float: left;
+  width: 40%;
+  padding-right: 5%;
+  color: #fff;
+}
+
+.contact .follow_me {
+  float: left;
+  width: 10%;
+  color: #fff;
+}
+
+.contact .newsletter::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.contact input {
+  min-height: 50px;
+  width: 80%;
+  float: left;
+}
+
+.contact .newsletter .arrow {
+  float: left;
+  width: 12%;
+  min-height: 50px;
+  background-color: #8490ff;
+  padding-top: 18px;
+  padding-left: 18px;
+  cursor: pointer;
+  border: none;
+}
+
+.follow_me .icon {
+  margin-right: 7.5px;
+  font-size: 15px;
+}
+
+/* --------------------------------- contact end --------------------------------- */
